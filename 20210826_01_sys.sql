@@ -1,17 +1,17 @@
 
---1ÁÙ  ÁÖ¼®¹® Ã³¸®(´ÜÀÏÇà ÁÖ¼®¹® Ã³¸®)
+--1ì¤„  ì£¼ì„ë¬¸ ì²˜ë¦¬(ë‹¨ì¼í–‰ ì£¼ì„ë¬¸ ì²˜ë¦¬)
 
 /*
-¿©·¯ÁÙ
-(´ÙÁßÇà)
-ÁÖ¼®¹® 
-Ã³¸®
+ì—¬ëŸ¬ì¤„
+(ë‹¤ì¤‘í–‰)
+ì£¼ì„ë¬¸ 
+ì²˜ë¦¬
 */
 
---¡Û ÇöÀç ¿À¶óÅ¬ ¼­¹ö¿¡ Á¢¼ÓÇÑ ÀÚ½ÅÀÇ °èÁ¤ Á¶È¸
+--â—‹ í˜„ìž¬ ì˜¤ë¼í´ ì„œë²„ì— ì ‘ì†í•œ ìžì‹ ì˜ ê³„ì • ì¡°íšŒ
 show user;
---==>> USERÀÌ(°¡) "SYS"ÀÔ´Ï´Ù.
---> sqlplus »óÅÂÀÏ ¶§ »ç¿ëÇÏ´Â ¸í·É¾î
+--==>> USERì´(ê°€) "SYS"ìž…ë‹ˆë‹¤.
+--> sqlplus ìƒíƒœì¼ ë•Œ ì‚¬ìš©í•˜ëŠ” ëª…ë ¹ì–´
 
 select user
 from dual;
@@ -19,7 +19,7 @@ from dual;
 
 SELECT USER
 FROM DUAL;
---==>> SYS  => ¿À¶óÅ¬¿¡¼­´Â ´ë¼Ò¹®ÀÚ ±¸ºÐÀ» ¾ÈÇÔ
+--==>> SYS  => ì˜¤ë¼í´ì—ì„œëŠ” ëŒ€ì†Œë¬¸ìž êµ¬ë¶„ì„ ì•ˆí•¨
 
 SELECT 1+2
 FROM DUAL;
@@ -29,35 +29,35 @@ SELECT 1 + 2
 FROM DUAL;
 --==>> 3
 
-SELECT ½Ö¿ë°­ºÏF°­ÀÇÀå
+SELECT ìŒìš©ê°•ì˜ìž¥
 FROM DUAL;
---==>> ¿¡·¯ ¹ß»ý
+--==>> ì—ëŸ¬ ë°œìƒ
 /*
-ORA-00904: "½Ö¿ë°­ºÏF°­ÀÇÀå": invalid identifier
+ORA-00904: "ìŒìš©ê°•ì˜ìž¥": invalid identifier
 00904. 00000 -  "%s: invalid identifier"
 *Cause:    
 *Action:
-32Çà, 8¿­¿¡¼­ ¿À·ù ¹ß»ý
+32í–‰, 8ì—´ì—ì„œ ì˜¤ë¥˜ ë°œìƒ
 */
 
-SELECT "½Ö¿ë°­ºÏF°­ÀÇÀå"
+SELECT "ìŒìš©ê°•ë¶Fê°•ì˜ìž¥"
 FROM DUAL;
---==>> ¿¡·¯ ¹ß»ý
+--==>> ì—ëŸ¬ ë°œìƒ
 /*
-ORA-00904: "½Ö¿ë°­ºÏF°­ÀÇÀå": invalid identifier
+ORA-00904: "ìŒìš©ê°•ë¶Fê°•ì˜ìž¥": invalid identifier
 00904. 00000 -  "%s: invalid identifier"
 *Cause:    
 *Action:
-43Çà, 8¿­¿¡¼­ ¿À·ù ¹ß»ý
+43í–‰, 8ì—´ì—ì„œ ì˜¤ë¥˜ ë°œìƒ
 */
 
-SELECT '½Ö¿ë°­ºÏF°­ÀÇÀå'
+SELECT 'ìŒìš©ê°•ë¶Fê°•ì˜ìž¥'
 FROM DUAL;
---==>> ½Ö¿ë°­ºÏF°­ÀÇÀå
+--==>> ìŒìš©ê°•ë¶Fê°•ì˜ìž¥
 
-SELECT '¾ÆÁ÷Àº Áö·çÇÑ ¿À¶óÅ¬ ¼ö¾÷'
+SELECT 'ì•„ì§ì€ ì§€ë£¨í•œ ì˜¤ë¼í´ ìˆ˜ì—…'
 FROM DUAL;
---==>> ¾ÆÁ÷Àº Áö·çÇÑ ¿À¶óÅ¬ ¼ö¾÷
+--==>> ì•„ì§ì€ ì§€ë£¨í•œ ì˜¤ë¼í´ ìˆ˜ì—…
 
 SELECT 3.14 + 1.36
 FROM DUAL;
@@ -83,9 +83,9 @@ SELECT 100 - 5.5
 FROM DUAL;
 --==>> 94.5
 
-SELECT 'Á¤¹ÌÈ­' + 'Ã¤ÁöÀ±'
+SELECT 'ì •ë¯¸í™”' + 'ì±„ì§€ìœ¤'
 FROM DUAL;
---==>> ¿¡·¯¹ß»ý
+--==>> ì—ëŸ¬ë°œìƒ
 /*
 ORA-01722: invalid number
 01722. 00000 -  "invalid number"
@@ -93,7 +93,7 @@ ORA-01722: invalid number
 *Action:   Specify a valid number.
 */
 
---¡Û ÇöÀç ¿À¶óÅ¬ ¼­¹ö¿¡ Á¸ÀçÇÏ´Â »ç¿ëÀÚ °èÁ¤ Á¤º¸ »óÅÂ Á¶È¸
+--â—‹ í˜„ìž¬ ì˜¤ë¼í´ ì„œë²„ì— ì¡´ìž¬í•˜ëŠ” ì‚¬ìš©ìž ê³„ì • ì •ë³´ ìƒíƒœ ì¡°íšŒ
 SELECT USERNAME, ACCOUNT_STATUS
 FROM DBA_USERS;
 --==>>
@@ -136,33 +136,33 @@ CTXSYS	            32	EXPIRED & LOCKED		21/08/25
 DBSNMP	            29	EXPIRED & LOCKED		14/05/29
 */
 
---> ¡ºDBA_¡»·Î ½ÃÀÛÇÏ´Â Oracle Data Dictionary View ´Â
--- ¿À·ÎÁö °ü¸®ÀÚ ±ÇÇÑÀ¸·Î Á¢¼ÓÇßÀ» °æ¿ì¿¡¸¸ Á¶È¸°¡ °¡´ÉÇÏ´Ù.
--- ¾ÆÁ÷Àº µ¥ÀÌÅÍ µñ¼Å³Ê¸® °³³äÀ» ÀâÁö ¸øÇØµµ »ó°ü¾ø´Ù.
+--> ã€ŽDBA_ã€ë¡œ ì‹œìž‘í•˜ëŠ” Oracle Data Dictionary View ëŠ”
+-- ì˜¤ë¡œì§€ ê´€ë¦¬ìž ê¶Œí•œìœ¼ë¡œ ì ‘ì†í–ˆì„ ê²½ìš°ì—ë§Œ ì¡°íšŒê°€ ê°€ëŠ¥í•˜ë‹¤.
+-- ì•„ì§ì€ ë°ì´í„° ë”•ì…”ë„ˆë¦¬ ê°œë…ì„ ìž¡ì§€ ëª»í•´ë„ ìƒê´€ì—†ë‹¤.
 
 
---¡Û ¡ºHR¡»»ç¿ëÀÚ °èÁ¤À» Àá±Ý »óÅÂ·Î ¼³Á¤
+--â—‹ ã€ŽHRã€ì‚¬ìš©ìž ê³„ì •ì„ ìž ê¸ˆ ìƒíƒœë¡œ ì„¤ì •
 ALTER USER HR ACCOUNT LOCK; 
---==>> User HRÀÌ(°¡) º¯°æµÇ¾ú½À´Ï´Ù.
+--==>> User HRì´(ê°€) ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.
 
---¡Û ´Ù½Ã »ç¿ëÀÚ °èÁ¤ »çÅÂ Á¶È¸
+--â—‹ ë‹¤ì‹œ ì‚¬ìš©ìž ê³„ì • ì‚¬íƒœ ì¡°íšŒ
 SELECT USERNAME, ACCOUNT_STATUS
 FROM DBA_USERS;
---==>> HRÀÌ Àá°åÀ½À» ¾Ë ¼ö ÀÖ´Ù. (À§¿¡ ÀÖ´Â Ãâ·Â °á°ú¹°°ú ºñ±³)
+--==>> HRì´ ìž ê²¼ìŒì„ ì•Œ ìˆ˜ ìžˆë‹¤. (ìœ„ì— ìžˆëŠ” ì¶œë ¥ ê²°ê³¼ë¬¼ê³¼ ë¹„êµ)
 /*
  :     :
 HR	LOCKED
  :     :
 */
 
---¡Û  ¡ºHR¡»»ç¿ëÀÚ °èÁ¤ Àá±Ý ÇØÁ¦
+--â—‹  ã€ŽHRã€ì‚¬ìš©ìž ê³„ì • ìž ê¸ˆ í•´ì œ
 ALTER USER HR ACCOUNT UNLOCK;
---==>> User HRÀÌ(°¡) º¯°æµÇ¾ú½À´Ï´Ù.
+--==>> User HRì´(ê°€) ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.
 
---¡Û  ´Ù½Ã »ç¿ëÀÚ °èÁ¤ »óÅÂ Á¶È¸
+--â—‹  ë‹¤ì‹œ ì‚¬ìš©ìž ê³„ì • ìƒíƒœ ì¡°íšŒ
 SELECT USERNAME, ACCOUNT_STATUS
 FROM DBA_USERS;
---==>> HRÀÌ ¿­·ÈÀ½À» ¾Ë ¼ö ÀÖ´Ù. (À§¿¡ ÀÖ´Â Ãâ·Â °á°ú¹°°ú ºñ±³)
+--==>> HRì´ ì—´ë ¸ìŒì„ ì•Œ ìˆ˜ ìžˆë‹¤. (ìœ„ì— ìžˆëŠ” ì¶œë ¥ ê²°ê³¼ë¬¼ê³¼ ë¹„êµ)
 /*
  :     :
 HR	OPEN
@@ -171,33 +171,33 @@ HR	OPEN
 
 --------------------------------------------------------------------------------
 
---¡Û TABLESPACE »ý¼º
+--â—‹ TABLESPACE ìƒì„±
 
--- ¡Ø TABLESPACE¶õ?
---    ¼¼±×¸ÕÆ®(Å×ÀÌºí, ÀÎµ¦½º,....)¸¦ ´ã¾ÆµÎ´Â (ÀúÀåÇØµÎ´Â)
---    ¿À¶óÅ¬ÀÇ ³í¸®ÀûÀÎ ÀúÀå ±¸Á¶¸¦ ÀÇ¹ÌÇÑ´Ù.
+-- â€» TABLESPACEëž€?
+--    ì„¸ê·¸ë¨¼íŠ¸(í…Œì´ë¸”, ì¸ë±ìŠ¤,....)ë¥¼ ë‹´ì•„ë‘ëŠ” (ì €ìž¥í•´ë‘ëŠ”)
+--    ì˜¤ë¼í´ì˜ ë…¼ë¦¬ì ì¸ ì €ìž¥ êµ¬ì¡°ë¥¼ ì˜ë¯¸í•œë‹¤.
 
-CREATE TABLESPACE TBS_EDUA                   -- CREATE À¯Çü ROCPAUD ¡æ »ý¼º
-DATAFILE 'C:\TESTORADATA\TBS_EDUA01.DBF'     -- ¹°¸®ÀûÀ¸·Î ¿¬°áµÇ´Â µ¥ÀÌÅÍ ÆÄÀÏ
-SIZE 4M                                      -- ¹°¸®Àû µ¥ÀÌÅÍ ÆÄÀÏÀÇ ¿ë·®
-EXTENT MANAGEMENT LOCAL                      -- ¿À¶óÅ¬ ¼­¹ö°¡ ¼¼±×¸ÕÆ®¸¦ ¾Ë¾Æ¼­ °ü¸®
-SEGMENT SPACE MANAGEMENT AUTO;               -- ¼¼±×¸ÕÆ® °ø°£ °ü¸®µµ ÀÚµ¿À¸·Î ¿À¶óÅ¬ ¼­¹ö¿¡ À§ÀÓ
+CREATE TABLESPACE TBS_EDUA                   -- CREATE ìœ í˜• ROCPAUD â†’ ìƒì„±
+DATAFILE 'C:\TESTORADATA\TBS_EDUA01.DBF'     -- ë¬¼ë¦¬ì ìœ¼ë¡œ ì—°ê²°ë˜ëŠ” ë°ì´í„° íŒŒì¼
+SIZE 4M                                      -- ë¬¼ë¦¬ì  ë°ì´í„° íŒŒì¼ì˜ ìš©ëŸ‰
+EXTENT MANAGEMENT LOCAL                      -- ì˜¤ë¼í´ ì„œë²„ê°€ ì„¸ê·¸ë¨¼íŠ¸ë¥¼ ì•Œì•„ì„œ ê´€ë¦¬
+SEGMENT SPACE MANAGEMENT AUTO;               -- ì„¸ê·¸ë¨¼íŠ¸ ê³µê°„ ê´€ë¦¬ë„ ìžë™ìœ¼ë¡œ ì˜¤ë¼í´ ì„œë²„ì— ìœ„ìž„
 
--- ¡Ø Å×ÀÌºí½ºÆäÀÌ½º »ý¼º ±¸¹®À» ½ÇÇàÇÏ±â Àü¿¡
---    ¹°¸®ÀûÀÎ °æ·Î¿¡ µð·ºÅÍ¸® »ý¼ºÇÒ °Í.
+-- â€» í…Œì´ë¸”ìŠ¤íŽ˜ì´ìŠ¤ ìƒì„± êµ¬ë¬¸ì„ ì‹¤í–‰í•˜ê¸° ì „ì—
+--    ë¬¼ë¦¬ì ì¸ ê²½ë¡œì— ë””ë ‰í„°ë¦¬ ìƒì„±í•  ê²ƒ.
 
---==>> TABLESPACE TBS_EDUAÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> TABLESPACE TBS_EDUAì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
---¡Û »ý¼ºµÈ Å×ÀÌºí½ºÆäÀÌ½º(TBS_EDUA) Á¶È¸
-SELECT *                            --¸ðµç Ç×¸ñ
+--â—‹ ìƒì„±ëœ í…Œì´ë¸”ìŠ¤íŽ˜ì´ìŠ¤(TBS_EDUA) ì¡°íšŒ
+SELECT *                            --ëª¨ë“  í•­ëª©
 FROM DBA_TABLESPACES;
---==>> TBS_EDUA°¡ Ãß°¡µÆÀ½À» ¾Ë ¼ö ÀÖ´Ù.
+--==>> TBS_EDUAê°€ ì¶”ê°€ëìŒì„ ì•Œ ìˆ˜ ìžˆë‹¤.
 /*
 TBS_EDUA	8192	65536		1	2147483645	2147483645		65536	ONLINE	PERMANENT	LOGGING	NO	LOCAL	SYSTEM	NO	AUTO	DISABLED	NOT APPLY	NO	HOST	NO	
 */
 
---¡Û ¹°¸®ÀûÀÎ ÆÄÀÏ ÀÌ¸§ Á¶È¸
+--â—‹ ë¬¼ë¦¬ì ì¸ íŒŒì¼ ì´ë¦„ ì¡°íšŒ
 SELECT *
 FROM DBA_DATA_FILES;
 --==>>
@@ -205,51 +205,51 @@ FROM DBA_DATA_FILES;
 C:\TESTORADATA\TBS_EDUA01.DBF	5	TBS_EDUA	4194304	512	AVAILABLE	5	NO	0	0	0	3145728	384	ONLINE
 */
 
---¡Û ¿À¶óÅ¬ »ç¿ëÀÚ °èÁ¤ »ý¼º(lys)
-CREATE USER lys IDENTIFIED BY java006$
+--â—‹ ì˜¤ë¼í´ ì‚¬ìš©ìž ê³„ì • ìƒì„±(ly)
+CREATE USER ly IDENTIFIED BY java006$
 DEFAULT TABLESPACE TBS_EDUA;
---> lys¶ó´Â »ç¿ëÀÚ °èÀúÀ» ¸¸µé°Ú´Ù. (»ý¼ºÇÏ°Ú´Ù.)
---  ÀÌ °èÁ¤ÀÇ ÆÐ½º¿öµå´Â java006$·Î ±¸¼ºÇÏ°Ú´Ù. (¼³Á¤ÇÏ°Ú´Ù.)
---  ÀÌ °èÁ¤À» ÅëÇØ Á¢¼ÓÇØ¼­ »ý¼ºÇÏ´Â ¿À¶óÅ¬ °´Ã¼´Â(¼¼±×¸ÕÆ®µéÀº)
---  ±âº»ÀûÀ¸·Î TBS_EDUA¶ó´Â Å×ÀÌºí½ºÆäÀÌ½º¸¦ È°¿ëÇÒ ¼ö ÀÖµµ·Ï ¼³Á¤ÇÏ°Ú´Ù.
---  (ÀÌ Å×ÀÌºí ½ºÆäÀÌ½º¿¡ »ý¼ºµÉ ¼ö ÀÖµµ·Ï ¼³Á¤ÇÏ°Ú´Ù.)
---==>> User LYSÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--> lyë¼ëŠ” ì‚¬ìš©ìž ê³„ì €ì„ ë§Œë“¤ê² ë‹¤. (ìƒì„±í•˜ê² ë‹¤.)
+--  ì´ ê³„ì •ì˜ íŒ¨ìŠ¤ì›Œë“œëŠ” java006$ë¡œ êµ¬ì„±í•˜ê² ë‹¤. (ì„¤ì •í•˜ê² ë‹¤.)
+--  ì´ ê³„ì •ì„ í†µí•´ ì ‘ì†í•´ì„œ ìƒì„±í•˜ëŠ” ì˜¤ë¼í´ ê°ì²´ëŠ”(ì„¸ê·¸ë¨¼íŠ¸ë“¤ì€)
+--  ê¸°ë³¸ì ìœ¼ë¡œ TBS_EDUAë¼ëŠ” í…Œì´ë¸”ìŠ¤íŽ˜ì´ìŠ¤ë¥¼ í™œìš©í•  ìˆ˜ ìžˆë„ë¡ ì„¤ì •í•˜ê² ë‹¤.
+--  (ì´ í…Œì´ë¸” ìŠ¤íŽ˜ì´ìŠ¤ì— ìƒì„±ë  ìˆ˜ ìžˆë„ë¡ ì„¤ì •í•˜ê² ë‹¤.)
+--==>> User LYì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- ¡Ø »ý¼ºµÈ ¿À¶óÅ¬ »ç¿ëÀÚ °èÁ¤(lys)À» ÅëÇØ
---    ¿À¶óÅ¬¿¡ Á¢¼ÓÀ» ½ÃµµÇØ º¸¾ÒÀ¸³ª.. Á¢¼Ó ºÒ°¡.
---    ¡æ »óÅÂ : »óÅÂ: ½ÇÆÐ -Å×½ºÆ® ½ÇÆÐ: ORA-01045: user LYS lacks CREATE SESSION privilege; logon denied
---> create session ±ÇÇÑÀÌ ¾ø±â ¶§¹®¿¡...
+-- â€» ìƒì„±ëœ ì˜¤ë¼í´ ì‚¬ìš©ìž ê³„ì •(ly)ì„ í†µí•´
+--    ì˜¤ë¼í´ì— ì ‘ì†ì„ ì‹œë„í•´ ë³´ì•˜ìœ¼ë‚˜.. ì ‘ì† ë¶ˆê°€.
+--    â†’ ìƒíƒœ : ìƒíƒœ: ì‹¤íŒ¨ -í…ŒìŠ¤íŠ¸ ì‹¤íŒ¨: ORA-01045: user LY lacks CREATE SESSION privilege; logon denied
+--> create session ê¶Œí•œì´ ì—†ê¸° ë•Œë¬¸ì—...
 
---¡Û »ý¼ºµÈ ¿À¶óÅ¬ »ç¿ëÀÚ °èÁ¤(lys)¿¡
---   ¼­¹ö Á¢¼ÓÀÌ °¡´ÉÇÒ ¼ö ÀÖµµ·Ï create session ±ÇÇÑ ºÎ¿© ¡æ sys °¡...
-GRANT create session to lys;
---==>> GrantÀ»(¸¦) ¼º°øÇß½À´Ï´Ù.
+--â—‹ ìƒì„±ëœ ì˜¤ë¼í´ ì‚¬ìš©ìž ê³„ì •(ly)ì—
+--   ì„œë²„ ì ‘ì†ì´ ê°€ëŠ¥í•  ìˆ˜ ìžˆë„ë¡ create session ê¶Œí•œ ë¶€ì—¬ â†’ sys ê°€...
+GRANT create session to ly;
+--==>> Grantì„(ë¥¼) ì„±ê³µí–ˆìŠµë‹ˆë‹¤.
 
--- ¡Ø »ý¼ºµÈ ¿À¶óÅ¬ »ç¿ëÀÚ °èÁ¤(lys)À» ÅëÇØ ¿À¶óÅ¬ Á¢¼Ó °¡´É~!!
---    ÇÏÁö¸¸, Å×ÀÌºí »ý¼º ºÒ°¡(¡æ ±ÇÇÑ ºÒÃæºÐ)
+-- â€» ìƒì„±ëœ ì˜¤ë¼í´ ì‚¬ìš©ìž ê³„ì •(ly)ì„ í†µí•´ ì˜¤ë¼í´ ì ‘ì† ê°€ëŠ¥~!!
+--    í•˜ì§€ë§Œ, í…Œì´ë¸” ìƒì„± ë¶ˆê°€(â†’ ê¶Œí•œ ë¶ˆì¶©ë¶„)
 
---¡Û »ý¼ºµÈ ¿À¶óÅ¬ »ç¿ëÀÚ °èÁ¤(lys)ÀÇ
---   ½Ã½ºÅÛ °ü·Ã ±ÇÇÑ Á¶È¸
+--â—‹ ìƒì„±ëœ ì˜¤ë¼í´ ì‚¬ìš©ìž ê³„ì •(ly)ì˜
+--   ì‹œìŠ¤í…œ ê´€ë ¨ ê¶Œí•œ ì¡°íšŒ
 SELECT *
 FROM DBA_SYS_PRIVS;
 --==>> 
 /*
         :
-LYS	CREATE SESSION	NO
+LY	CREATE SESSION	NO
         :
 */
 
---¡Û »ý¼ºµÈ ¿À¶óÅ¬ »ç¿ëÀÚ °èÁ¤(lys)¿¡
---   Å×ÀÌºí »ý¼ºÀÌ °¡´ÉÇÒ ¼ö ÀÖµµ·Ï  CREATE TABLE ±ÇÇÑ ºÎ¿©
-GRANT CREATE TABLE TO lys;
---==>> GrantÀ»(¸¦) ¼º°øÇß½À´Ï´Ù.
+--â—‹ ìƒì„±ëœ ì˜¤ë¼í´ ì‚¬ìš©ìž ê³„ì •(ly)ì—
+--   í…Œì´ë¸” ìƒì„±ì´ ê°€ëŠ¥í•  ìˆ˜ ìžˆë„ë¡  CREATE TABLE ê¶Œí•œ ë¶€ì—¬
+GRANT CREATE TABLE TO ly;
+--==>> Grantì„(ë¥¼) ì„±ê³µí–ˆìŠµë‹ˆë‹¤.
 
---¡Û »ý¼ºµÈ ¿À¶óÅ¬ »ç¿ëÀÚ °èÁ¤(lys)¿¡
---   Å×ÀÌºê½ºÆäÀÌ½º(TBS_EDUA)¿¡¼­ »ç¿ëÇÒ ¼ö ÀÖ´Â °ø°£(ÇÒ´ç·®)
---   ÀÇ Å©±â¸¦ ¹«Á¦ÇÑÀ¸·Î ÁöÁ¤.
-ALTER USER lys
+--â—‹ ìƒì„±ëœ ì˜¤ë¼í´ ì‚¬ìš©ìž ê³„ì •(ly)ì—
+--   í…Œì´ë¸ŒìŠ¤íŽ˜ì´ìŠ¤(TBS_EDUA)ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ê³µê°„(í• ë‹¹ëŸ‰)
+--   ì˜ í¬ê¸°ë¥¼ ë¬´ì œí•œìœ¼ë¡œ ì§€ì •.
+ALTER USER ly
 QUOTA UNLIMITED ON TBS_EDUA;
---==>> User LYSÀÌ(°¡) º¯°æµÇ¾ú½À´Ï´Ù.
+--==>> User LYì´(ê°€) ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
